@@ -1,1 +1,1 @@
-# MLProject1
+# Cosmic Exploration Classifiers
