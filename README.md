@@ -9,11 +9,10 @@ For the classification of celestial objects, I deployed three distinct ML models
 
 ## How to run?
 
-### 1. Cloning the code locally:
-Clone the repository and install the dependencies
-- Run `git@github.com:mobinajamali/Cosmic-Exploration-Classifiers.git`
+### 1. Working locally:
+Clone the repository and install the dependencies.
 
-### 2. Working on SciSercer:
+### 2. Working on SciServer:
 This work is designed to be run from the [SciServer](https://apps.sciserver.org/dashboard/) compute environment. Please set up a SciServer account and upload [main.ipynb](main.ipynb) into a new “container”.
 
 ## Data Query:
@@ -25,4 +24,7 @@ FROM PhotoObj AS p
 JOIN SpecObj AS s ON s.bestobjid = p.objid
 WHERE p.u BETWEEN 0 AND 19.6
   AND p.g BETWEEN 0 AND 20  AND p.petror90_r > 10
+```
+```
+CasJobs.executeQuery(query, "dr16")
 ```
